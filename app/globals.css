@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+  
+  --color-parchment-light: #fbf6eb;
+  --color-parchment-default: #f4ebd0;
+  --color-parchment-dark: #e8dab2;
+  --color-bronze-light: #d4af37;
+  --color-bronze-dark: #8c6d1d;
+  --color-sage-dark: #22291d;
+}
+
+/* Scrollbar customizations to match ancient guide theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121410;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c4434;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c6850;
+}
+
+/* Custom visual styling helpers */
+.paper-pattern {
+  background-color: #f4ebd0;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0), radial-gradient(rgba(0,0,0,0.02) 2px, transparent 0);
+  background-size: 8px 8px, 24px 24px;
+  background-position: 0 0, 4px 4px;
+}
+
+.brush-stroke {
+  position: relative;
+}
+.brush-stroke::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: radial-gradient(ellipse at center, rgba(140, 109, 29, 0.5) 0%, rgba(140, 109, 29, 0) 70%);
+}
+

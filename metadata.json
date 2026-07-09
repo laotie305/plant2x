@@ -1,0 +1,6 @@
+{
+  "name": "植物大战僵尸：人教版二年级下册数学图鉴海报",
+  "description": "融合《植物大战僵尸》西游古风主题，采用【现代图鉴风】打造的人教版小学二年级下册数学科普海报与趣味互动程序。覆盖全部九大知识模块，包含生动图鉴、交互式数学沙盘、御尸数学挑战与AI图鉴扩展工坊。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
